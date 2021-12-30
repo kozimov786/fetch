@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>News</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form class="form-group py-4 news-form" method="GET" action="https://newsapi.org/v2/">
+          <input class="form-control news-input" type="search" placeholder="Search" name="search" aria-label="search">
+        </form>
+      </div>
+      <div class="col-12">
+        <div class="news-list list-group"></div>
+      </div>
+    </div>
+  </div>
+
+  <template id='newsTemp'>
+    <a class="newsItem list-group-item list-group-item-action" href="" target="_blank">
+      <h3 class="h5"></h3>
+      <p class="small"></p>
+    </a>
+  </template>
+  <script src="index.js"></script>
+</body>
+
+</html>
